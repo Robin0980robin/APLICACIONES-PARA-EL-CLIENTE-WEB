@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Clientes</h1>
+        <form id="clienteForm" onsubmit="return validarFormulario()">
+            <p>
+                Cédula: <input type="text" id="cedula" name="cedula_control" required />
+            </p>
+            <p>
+                Apellidos: <input type="text" id="apellidos" name="apellidos_control" required />
+            </p>
+            <p>
+                Nombres: <input type="text" id="nombres" name="nombres_control" required />
+            </p>
+            <p>
+                Dirección: <input type="text" id="direccion" name="direccion_control" required />
+            </p>
+            <p>
+                Teléfono: <input type="tel" id="telefono" name="telefono_control" required />
+            </p>
+            <p>
+                Correo Electrónico: <input type="email" id="email" name="email_control" required />
+            </p>
+            <p>
+                Ciudad:
+                <select id="ciudad" name="ciudad_control" required>
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="quito">Quito</option>
+                    <option value="guayaquil">Guayaquil</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="ambato">Ambato</option>
+                    <option value="manta">Manta</option>
+		    <option value="montecristi">Montecristi</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+        </form>
+    </div>
+
+    <script src="TAREA3.js"></script>
+</body>
+</html>
