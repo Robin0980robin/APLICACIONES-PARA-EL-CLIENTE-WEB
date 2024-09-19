@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 210mm; /* Ancho de una hoja A4 */
+    height: 297mm; /* Alto de una hoja A4 */
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Columna izquierda con fondo verde pastel claro */
+.left-column {
+    width: 30%;
+    background-color: #e0f7e9; /* Verde pastel claro */
+    color: #333333; /* Texto negro */
+    padding: 20px;
+    text-align: center;
+}
+
+.right-column {
+    width: 70%;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+}
+
+.photo {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* Borde blanco */
+}
+
+h1 {
+    color: #333; /* Texto negro */
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #2d8659; /* Verde oscuro */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2d8659; /* Verde oscuro */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 5px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #2d8659; /* Verde oscuro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
