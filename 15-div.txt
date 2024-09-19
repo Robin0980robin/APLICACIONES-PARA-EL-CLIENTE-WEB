@@ -1,3 +1,0 @@
-<div class="contenedor">
-  <p>Contenido dentro de un div.</p>
-</div>
