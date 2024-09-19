@@ -1,4 +1,0 @@
-<form action="/submit" method="post">
-  <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-  <button type="submit">Enviar</button>
-</form>
