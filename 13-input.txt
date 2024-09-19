@@ -1,2 +1,0 @@
-<p>Ingrese su nombre</p>
-<input type="text" name="usuario">
