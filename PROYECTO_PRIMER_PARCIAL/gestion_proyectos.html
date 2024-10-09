@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Proyectos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Gestión de Proyectos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gestion_proyectos.html">Proyectos</a></li>
+                <li><a href="control_seguimiento.html">Control y Seguimiento de Proyectos</a></li>
+                <li><a href="comunicacion.html">Mensajes</a></li>
+                <li><a href="inicio.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects-container">
+        <h2>Tus Proyectos</h2>
+
+        <button class="btn" onclick="showCreateProjectForm()">Crear Nuevo Proyecto</button>
+
+        <div id="projectForm" class="project-form" style="display: none;">
+            <h3>Crear Proyecto</h3>
+            <form id="createProjectForm" onsubmit="return validateProjectForm()">
+                <label for="projectName">Nombre del Proyecto:</label>
+                <input type="text" id="projectName" name="projectName" required>
+
+                <label for="projectDescription">Descripción:</label>
+                <textarea id="projectDescription" name="projectDescription" required></textarea>
+
+                <label for="projectStatus">Estado:</label>
+                <select id="projectStatus" name="projectStatus">
+                    <option value="En Progreso">En Progreso</option>
+                    <option value="Completado">Completado</option>
+                    <option value="Pendiente">Pendiente</option>
+                </select>
+
+                <button type="submit" class="btn">Guardar Proyecto</button>
+            </form>
+        </div>
+
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Nombre del Proyecto</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Investigación A</td>
+                    <td>Estudio sobre inteligencia artificial en educación.</td>
+                    <td>En Progreso</td>
+                    <td>
+                        <button class="btn" onclick="editProject()">Editar</button>
+                        <button class="btn btn-delete" onclick="deleteProject()">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Investigación B</td>
+                    <td>Impacto de las redes sociales en los adolescentes.</td>
+                    <td>Completado</td>
+                    <td>
+                        <button class="btn" onclick="editProject()">Editar</button>
+                        <button class="btn btn-delete" onclick="deleteProject()">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy;2024 ******** Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

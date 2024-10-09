@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Control de Proyectos</title>
+</head>
+<body>
+    <header>
+        <h1>Comunicación</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="gestion_proyectos.html">Proyectos</a></li>
+                <li><a href="control_seguimiento.html">Control y Seguimiento de Proyectos</a></li>
+                <li><a href="comunicacion.html">Mensajes</a></li>
+                <li><a href="inicio.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="comunicacion">
+            <div style="text-align: center; padding: 20px;">
+                <h2>Mensajes</h2>
+                
+                <!-- Formulario de Enviar Mensaje centrado -->
+                <div style="display: flex; justify-content: center;">
+                    <form id="enviar-mensaje" style="max-width: 600px; text-align: left;">
+                        <div>
+                            <label for="destinatario">Destinatario:</label>
+                            <input type="email" id="destinatario" name="destinatario" required>
+                        </div>
+                        <div>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <button type="submit" style="width: 150px;">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Mensajes recibidos -->
+            <div id="mensajes-recibidos" style="text-align: center;">
+                <h3>Mensajes Recibidos</h3>
+                
+                <table style="margin: 0 auto; width: 80%; text-align: left;">
+                    <thead>
+                        <tr>
+                            <th>Remitente</th>
+                            <th>Asunto</th>
+                            <th>Fecha</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>investigador2@live.uleam.edu.ec</td>
+                            <td>Resultados del Proyecto B</td>
+                            <td>04/10/2024</td>
+                            <td><a href="#">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>investigador3@live.uleam.edu.ec</td>
+                            <td>Reunión programada</td>
+                            <td>03/10/2024</td>
+                            <td><a href="#">Ver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2024 ******** Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
