@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <id>1</id>
+        <name>Proyecto A</name>
+        <description>Descripción del Proyecto A</description>
+        <status>En Progreso</status>
+    </project>
+    <project>
+        <id>2</id>
+        <name>Proyecto B</name>
+        <description>Descripción del Proyecto B</description>
+        <status>Completado</status>
+    </project>
+</projects>

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Proyecto A",
+        "description": "Descripción del Proyecto A",
+        "status": "En Progreso"
+    },
+    {
+        "id": 2,
+        "name": "Proyecto B",
+        "description": "Descripción del Proyecto B",
+        "status": "Completado"
+    }
+]
